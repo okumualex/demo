@@ -4,15 +4,29 @@
     <title>Second practise</title>
     <style>
       form {
-        background-color: lightgrey;
+        background-color: rgb(247, 247, 247);
         padding: 30px;
         text-align:center;
+        border-radius: 50px;
+        margin: 0 50px;
       }
-      div input {
+      div input,button {
         padding:15px;
         border-radius:20px;
         cursor:pointer;
         margin: 15px;
+        outline: none;
+        border: none;
+      }
+      #submit input,button {
+        background-color: goldenrod;
+        color: white;
+      }
+      #submit input:hover{
+        background-color: greenyellow;
+      }
+      #submit button:hover{
+        background-color: rgb(255, 234, 47);
       }
     </style>
   </head>
@@ -25,8 +39,9 @@
       <div>
         <input type="password" placeholder="password" name="password">
       </div>
-      <div>
+      <div id="submit">
         <input type="submit" name="submit">
+        <button>Sign Up</button>
       </div>
     </form>
   </body>
